@@ -1,0 +1,91 @@
+.ac-wrap:last-child {
+  margin-bottom: 6rem;
+}
+.ac-title {
+  background: rgb(83, 15, 15);
+  color: #f2f2f2;
+  font-weight: normal;
+  text-align: center;
+  letter-spacing: 4px;
+  padding: 10px 0;
+  margin: 0 auto;
+  max-width: 700px;
+}
+.ac-menu {
+  max-width: 700px;
+  margin: 0px auto 0;
+}
+.ac-item {
+  text-align: center;
+  position: relative;
+}
+
+/* アコーディオン中身 */
+.question {
+  display: block;
+  line-height: 50px;
+  text-align: center;
+  border: #666 1px solid;
+  cursor: pointer;
+}
+.question:hover {
+  opacity: 0.7;
+}
+.answer {
+  background: #f03d3d34;
+  line-height: 50px;
+  text-align: center;
+  border: #666 1px solid;
+  display: none;
+}
+.toggle {
+  position: absolute;
+  top: 0px;
+  right: 15px;
+  font-size: 30px;
+  cursor: pointer;
+}
+.toggle:hover {
+  color: rgb(182, 142, 142);
+  opacity: 0.7;
+}
+/* アコーディオン中身 */
+
+/* すべて開くﾎﾞﾀﾝ */
+.all-btn-flex {
+  display: flex;
+  justify-content: center;
+}
+.all-btn {
+  width: 200px;
+}
+.open-btn:before {
+  content: "+";
+  font-size: 20px;
+  font-weight: bold;
+  padding-right: 20px;
+}
+.close-btn:before {
+  content: "-";
+  font-size: 20px;
+  font-weight: bold;
+  padding-right: 20px;
+}
+.all-btn:hover {
+  transform: translateY(3px);
+  box-shadow: none;
+}
+.all-wrap .close-btn {
+  background-color: rgb(49, 171, 202);
+}
+/* すべて開くﾎﾞﾀﾝ */
+
+@media screen and (max-width: 560px) {
+  .all-btn-flex {
+    display: flex;
+    flex-direction: column;
+  }
+  .all-wrap {
+    text-align: center;
+  }
+}
